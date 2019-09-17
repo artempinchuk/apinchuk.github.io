@@ -6,7 +6,19 @@
 <body>
 
 <h1>Hello world</h1>
+  <div data-eatch-widget="OrderButtonSimple" data-eatch-widget-style="red" 
+data-eatch-restaurant="DEMO-Test-Pizzakurier" data-eatch-lang="en"></div>
 <p>Some random text</p>
 
+  <script>
+    (function() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://partner-centre.eatch.loc/ch-widgets/OrderButtonSimple.js';
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+})();
+</script>
+  
 </body>
 </html>
